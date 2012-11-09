@@ -6,25 +6,22 @@
 	<script src="http://jsfiddle.net/js/lib/mootools-more-1.4.0.1.js"></script>
 	<link rel="stylesheet" href="styles.css" type="text/css" media="all" />
 </head>
-<body>
+<body data-href="index.html" data-source="#content" data-destination="#content">
 	<section>
 		<header>
 			<h1>PiStory Demos</h1>
 		</header>
-		<article>
-			<header>
-				<h2>Script lazy loading from anchor</h2>
-			</header>
+		<nav>
 			<p>
-				<a id="demo1" class="storified" href="http://localhost/PiStory/Demo/about.html" data-source="#content" data-callback="alert('test');">Sample About Us Page</a>
+				<a id="demo1" class="storified" href="about.html" data-source="#content" data-callback="console.log('Triggered by an inline callback');">Sample About Us Page</a>
 			</p>
 			<p>
-				<a id="demo2" class="storified" href="http://localhost/PiStory/Demo/copyright.html" data-source="#content" data-destination="#content">Sample Copyright Page</a>
+				<a id="demo2" class="storified" href="copyright.html" data-source="#content" data-destination="#content">Sample Copyright Page</a>
 			</p>
 			<p>
-				<a href="http://localhost/PiStory/Demo/">Normal Link</a>
+				<a href=".">Normal Link</a>
 			</p>
-		</article>
+		</nav>
 		
 		<article id="content">
 		
